@@ -26,9 +26,7 @@ Such an overlap biases the generation toward a single concept $c_i$, reducing th
 
 We propose a cure for problematic modes. Our intuitive idea is to go away from problematic modes and move towards modes under which none of the individual concepts are strong.
 To realize this, we propose  *Concept Contrasting Corrector (CO3)* that generates samples from the following distribution: 
-$$
-    \tilde{p}_t(x_t, C) \propto \frac{p_t(x_t \mid C)^{w_0}}{\prod_{k=1}^K p_t(x_t \mid c_k)^{w_k}},
-$$
+$$\tilde{p}_t(x_t, C) \propto \frac{p_t(x_t \mid C)^{w_0}}{\prod_{k=1}^K p_t(x_t \mid c_k)^{w_k}},$$
 This corrector distribution $\tilde{p}(x \mid C)$ assigns low probability to regions where $p(x \mid C)$ overlaps with individual $p(x \mid c_i)$. By suppressing these overlaps, the corrector emphasizes *pure* $p(x\mid C)$ modes where all concepts coexist without one overwhelming the others. 
 
 ## 🚀How to Run
