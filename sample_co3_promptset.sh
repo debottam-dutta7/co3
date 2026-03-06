@@ -2,7 +2,8 @@
 export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
 export CUDA_VISIBLE_DEVICES=0
 
-PROMPTSET_PATH="prompt_set/rare_bench/rare_bench_multi1and.txt"
+PROMPTSET_PATH="prompt_set/rare_bench/rare_bench_multi1and.txt" #change this prompt set path to the /prompt_set/ae_prompts/animals.txt if you wish to use the a_e prompts
+
 
 
 
